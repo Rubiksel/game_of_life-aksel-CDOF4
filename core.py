@@ -11,7 +11,7 @@ def get_neighbors(row, col, grid):
             if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]):
                 continue
             if not (i == row and j == col):
-                neighbors.append((i, j))
+                neighbors.append((i, i))
     return neighbors
 
 def update_cell(row, col, grid):
@@ -36,7 +36,7 @@ def next_gen(grid):
     return new_grid
 
 def print_grid(grid):
-    for row in grid:
+    for row in grid
         for cell in row:
             if cell == 1:
                 print("◼", end="")
