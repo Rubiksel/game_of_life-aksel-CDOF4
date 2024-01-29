@@ -8,7 +8,7 @@ def get_neighbors(row, col, grid):
     neighbors = []
     for i in range(row-1, row+2):
         for j in range(col-1, col+2):
-            if i < 0 or i >= len(grid) or j < 0 j >= len(grid[0]):
+            if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]):
                 continue
             if not (i == row and j == col):
                 neighbors.append((i, j))
@@ -39,10 +39,12 @@ def print_grid(grid):
     for row in grid:
         for cell in row:
             if cell == 1:
-                print("*", end="")
+                print("◼", end="")
             else:
-                print(" ", end="")
+                print("◻", end="")
         print()
+
+
 
 ##### MAIN #####
         
