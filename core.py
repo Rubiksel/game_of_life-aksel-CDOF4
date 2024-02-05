@@ -36,7 +36,7 @@ def next_gen(grid):
     return new_grid
 
 def print_grid(grid):
-    for row in grid
+    for row in grid:
         for cell in row:
             if cell == 1:
                 print("◼", end="")
