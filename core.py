@@ -11,7 +11,7 @@ def get_neighbors(row, col, grid):
             if i < 0 or i >= len(grid) or j < 0 or j >= len(grid[0]):
                 continue
             if not (i == row and j == col):
-                neighbors.append((i, i))
+                neighbors.append((i, j))
     return neighbors
 
 def update_cell(row, col, grid):
