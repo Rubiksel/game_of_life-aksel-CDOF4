@@ -17,6 +17,9 @@ In the main, a random grid is initalized and the user can decide to reach the ne
 
 How to run the game: 
 
+Clone the repo:
+    ``` git clone git@github.com:Rubiksel/game_of_life-aksel-CDOF4.git ```
+
 - Windows: open a command prompt window and navigate to the "core.py" file directory. Type in your command prompt "python3 core.py".
 - MacOS/Linux: open a terminal window and navigate to the "core.py" file directory. Type in your terminal "python core.py".
 
